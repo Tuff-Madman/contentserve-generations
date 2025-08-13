@@ -12,7 +12,7 @@ In diesem Ordner findest du Prompts zur automatischen Titelerstellung.
 
 ### Baseline Prompt
 ```
-Schreibe einen einfachen Titel für das Thema.
+ 
 ```
 
 ### Haupt-Prompt (zusammengesetzt)
