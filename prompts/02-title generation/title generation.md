@@ -40,7 +40,7 @@ Construct the canonical product title using available attributes in this exact o
   - Dimensions/Measurements: Always include if specified and meaningful (e.g., “180x200 cm”, “Höhe 120 cm”).
   - Special Feature: Include if present and relevant.
   - Finish/Surface: Include if specifically mentioned and relevant (e.g., “lackiert”, “geölt”, “matt”)
-- [Color]: The main color or color combination of the product, as perceived by customers.
+- [Color]: The main color or color combination of the product as derivable by present color related attributes, placed at titles end.
 
 
 ### Rules
@@ -49,7 +49,7 @@ Construct the canonical product title using available attributes in this exact o
 3. Then add [Series] (if present and distinct from brand).
 4. Then add [KeyAttributes] in a logical, natural order (e.g., measurements, materials, special characteristics).
 5. Then add [Finish] (if present).
-6. End with [Color] or color combination (if present).
+6. End always with [Color] or color combination (if present).
 
 Examples:
 - If Brand, ProductType, and Series are present: [Brand][ProductType][Series]...[Color]
