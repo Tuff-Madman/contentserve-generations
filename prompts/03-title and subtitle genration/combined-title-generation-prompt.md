@@ -19,12 +19,11 @@ Your output MUST follow this exact schema (no deviation allowed):
 
 # A: INSTRUCTIONS FOR H1 TITLE GENERATION
 
-Structure and format the title according to the following guidelines, using only original product information provided To do so, adhere to these key principles:
+Structure and format the title according to the following guidelines, using only original product information provided. To do so, adhere to these key principles:
 - Flexible attribute inclusion based on availability
 - Natural word order prioritizing, surfacing main keywords early for immediate product clarity
 - Prefer concise, consumer-relevant phrasing that reflects typical customer query patterns.
-- Natural, hype-free wording; avoiding keyword stuffing anH1  d filler words
-Natural, hype-free wording; avoiding keyword stuffing and filler words
+- Natural, hype-free wording; avoiding keyword stuffing and H1 filler words
 Use slash (/) with no spaces to indicate color and finish combinations.
 Adverbial and adjectival abbreviations
 - Space efficiency like consistent abbreviations
@@ -147,7 +146,7 @@ Note: This commented section serves as internal guiding for prompting/parsing/ru
 
 # B. INSTRUCTION FOR SUBTITLE GENERATION
 
-Write additionaly single subtitle (approximately 20 words) in German that complements the already created H1 Title, serving as supporting context considering this Rule of thumb: If the H1 is what it is, the subtitle is why it matters or what's special now.
+Write additionally a single subtitle (approximately 20 words) in German that complements the already created H1 Title, serving as supporting context considering this Rule of thumb: If the H1 is what it is, the subtitle is why it matters or what's special now.
 
 
 ## SUBTITLE GUIDELINES
@@ -161,18 +160,18 @@ Write additionaly single subtitle (approximately 20 words) in German that comple
 
 ### SUBTITLE STYLE, FORMATTING AND COMPOSITION REQUIREMENTS
 
-- **Flexible length**: Cosider a flexible target lengthof approximately 20 words for the subtitle.
-   - If just sparse  product data provided It is Ok to formulate a very concise subtitle (see TV-Schrank example_2) derivable from given data as long as you NEVER inlude any verbs or filler words just to reach the target length 
+- **Flexible length**: Consider a flexible target length of approximately 20 words for the subtitle.
+  - If just sparse product data provided it is OK to formulate a very concise subtitle (see TV-Schrank example_2) derivable from given data as long as you NEVER include any verbs or filler words just to reach the target length 
   - If highly relevant product data is given, a few more words are acceptable, but do NEVER exceed 25 words.
-- **Structure**: Compose the subtitle using comma-separated descriptive elements rather than simply listing further attributes or repeating any titel tokens
+- **Structure**: Compose the subtitle using comma-separated descriptive elements rather than simply listing further attributes or repeating any title tokens
 - **Formatting and Conventions**: Strictly apply the relevant formatting rules from the TITLE FORMAT AND STRUCTURE section, including:
   - Measurements (M1–M3)
   - Colors and Finishes (C1–C2)
   - Capital Letter at begin (B3)
   - Abbreviations (A1–A2)
   - Punctuation and Spacing (P1-P3)
-//Note: For subtitle creation, refer to and apply only those title formatting rules that are relevant and applicable to subtitles generation
-- **Tone & Sensitivity**: Maintain a natural wording, carefuly rephrasing or altering sensitive attribute data when apprortpiate.
+//Note: For subtitle creation, refer to and apply only those title formatting rules that are relevant and applicable to subtitle generation
+- **Tone & Sensitivity**: Maintain a natural wording, carefully rephrasing or altering sensitive attribute data when appropriate.
 - **Language & Terminology**: Ensure grammatical correctness and consistency with German language, using industry-appropriate terms.
   - Adapt order and phrasing to best serve clarity and search intent .
 
@@ -181,31 +180,31 @@ Write additionaly single subtitle (approximately 20 words) in German that comple
 In short: The subtitle should 
 - avoid keyword cannibalization
 - NEVER include generic or inferred filler phrases to fill space.
-- enrich the semantic field within the given product datas consztraints.
+- enrich the semantic field within the given product data's constraints.
 - give crawlers AND customers a reason to keep reading.
 
 
-## SUBTITLE EXCLUSIONS (What is not allowed to be included in the subtile)
+## SUBTITLE EXCLUSIONS (What is not allowed to be included in the subtitle)
 
 When generating a product subtitle, follow these STRICT rules:
 - REFRAIN FROM using any Verbs, filler words, generic or promotinal statements, or empty advertising phrases (this means NO “ideal für moderne Wohnräume”, NO “offers stylish storage”, NO “perfect for your home”, etc. ).
-- REFRAIN FROM simply repeating wht is already includeded in the H1 Titkle.
+- REFRAIN FROM simply repeating what is already included in the H1 Title.
 - do NEVER include any generic advertising phrases without real value (e.g., “top quality,” “must-have”).
-- do NEVER mention or disclose any catalog internal attribute references, infomration or technical details irrelevant to customers (e.g., internal codes, serial numbers, etc.).
+- do NEVER mention or disclose any catalog internal attribute references, information or technical details irrelevant to customers (e.g., internal codes, serial numbers, etc.).
 - do NOT use negative or negated phrases (e.g. „kein/keine, „ohne“) or other references to missing product features.
 - do NOT use any certificates, seals, guarantees, or legal statements (e.g., “TÜV approved,” “FSC-certified,” “2-year warranty,” “CE marked”).
 
-**UNDER ABSOLOTLY NO CIRCUMSTANCES** anything of the above Exlcusions should  appear in the subtitle.
+**UNDER ABSOLUTELY NO CIRCUMSTANCES** anything of the above Exclusions should appear in the subtitle.
 
 
 
 # FALLBACK - HANDLING MINIMAL OR INSUFFICIENT PRODUCT DATA FOR SUBTITLES
 
-If the provided product data is minimal or lacks sufficient distinctive attributes For both title and subtitle, :
+If the provided product data is minimal or lacks sufficient distinctive attributes for both title and subtitle:
 - Do NOT use generic, advertising, or filler phrases to fill space.
 - It is acceptable—and preferred—to output a very concise subtitle, even if it is much shorter than the typical target length.
 - Use only the most relevant, concrete attributes available, formatted as concise, comma-separated noun phrases or adjectives.
-- If no meaningful attributes remain after applying all exclusions, leave refer to exmple 2 for genrating a minimal fallback subtitle
+- If no meaningful attributes remain after applying all exclusions, refer to example 2 for generating a minimal fallback subtitle
 
 
 EXTREMELY IMPORTANT: The subtitle MUST be composed ONLY of concise, comma-separated noun phrases directly describing the product, without forming full sentences or making claims.
@@ -234,17 +233,17 @@ XML tags containing input-output pairs for specific products
 
 Use the examples below as guidance for correctly applying all title and subtitle generation rules—adapt the approach as needed for different product data scenarios.
 
-<example_1_hollywoodschaukel id="Demonstrates title compression and attribute-based subtitle derivation using mapping of original attribute data; subtitle adds most valuable specifics derivable without invention">
+<example_1_hollywoodschaukel id="correct title-and subtitle attribute usage for complex product data input">
   <product_data_input>Breite: "234 cm" | Gewicht: "51 kg" | Höhe: "170 cm" | Länge: "130 cm" | maximale Belastbarkeit: "330 kg" | Tiefe/Ausladung: "130 cm" | Hauptfarbe: "Grau" | Farbe: "Grau Schwarz" | Anzahl Zierkissen inklusive: "2" | Anzahl Sitzpolster inklusive: "1" | Eigenschaften Gartenmöbel: "Armlehnen inklusive, Dining, klappbar, Liegefunktion, Living, Mittellehner, Polsterauflage inklusive, Rückenlehne verstellbar" | Material: "Metall, Textil" | Stil: "Modern, Skandi" | Serien-Name PORTA: "SATURA" | Produktart: "Hollywoodschaukel" | Textilart: "Synthetikfaser" | Synthetikfaser 1: "Polyester (PES)"</product_data_input>
-  <title_subtitle_output>Hollywoodschaukel SATURA, Metall, 234 × 130 × 170 cm, Grau---|||---Metallgestell, Polyesterbezug, Modern Skandi, Armlehnen und klappbare Liegefunktion mit verstellbarer Rückenlehne, inklusive 2 Zierkissen und 1 Sitzpolster</title_subtitle_output>
+  <title_subtitle_output>"Hollywoodschaukel SATURA, Metall, 234 × 130 × 170 cm, Grau---|||---Metallgestell, Polyesterbezug, Modern Skandi, Armlehnen und klappbare Liegefunktion mit verstellbarer Rückenlehne, inklusive 2 Zierkissen und 1 Sitzpolster"</title_subtitle_output>
   <rationale>This example builds a compact, intent-focused title by mapping source attributes verbatim to core identifiers under character limits—map Produktart (“Hollywoodschaukel”) and Serien-Name PORTA (“SATURA”) directly, compress Material by mapping “Metall, Textil” → “Metall”, and optionally map Hauptfarbe (“Grau”)—then map deferred detail into the subtitle strictly from the same German fields: map Textilart (“Synthetikfaser”) + Synthetikfaser 1 (“Polyester (PES)”) → “Polyesterbezug”, map functional features from Eigenschaften Gartenmöbel (“klappbar”, “Liegefunktion”, “Rückenlehne verstellbar”, “Armlehnen inklusive”), and map inclusives from Anzahl Zierkissen inklusive (“2”) and Anzahl Sitzpolster inklusive (“1”); this mapping-based separation maximizes clarity and prevents repetition or unsupported invention.</rationale>
 </example_1_hollywoodschaukel>
 
 
-<example_2_tv_schrank id="Handling minimal product data input">
+<example_2_tv_schrank id="Handling minimal or insufficient product data input">
   <product_data_input>Breite: "164 cm" | Höhe: "124 cm" | Länge: "46 cm" | Farbe: "Weiß" | Produktart: "TV-Schrank"</product_data_input>
-  <title_subtitle_output>TV-Schrank 164 x 124 x 46 cm weiß---|||---TV-/Medienschrank, Aufbewarung von Setup & Zubehör</title_subtitle_output>
-  <rationale>Because the product data is minimal, the title should contain all available core elements (Produktart, dimensions, Farbe), as there are no possible trade-offs required to align with character limits; and for the subtitle  best derivable from the available source attributes, expressed as concise noun phrases only, with no verbs, no filler words, no repetition of title tokens, and no invention.</rationale>
+  <title_subtitle_output>"TV-Schrank 164 x 124 x 46 cm weiß---|||---TV-/Medienschrank, Aufbewahrung von Setup & Zubehör"</title_subtitle_output>
+  <rationale>Because the product data is minimal, the title should contain all available core elements (Produktart, dimensions, Farbe), as there are no possible trade-offs required to align with character limits. For the subtitle, when there are minimal or  no additional attributes left, the approach is to recombine or rephrase the same limited information to create an alternate, search-query-aligned phrasing—demonstrating how to maximize value and differentiation even when no further attributes are available.</rationale>
 </example_2_tv_schrank>
 
 
@@ -258,10 +257,10 @@ Provide only final output of the H1 title and the complementary subtitle, while 
 
 So Adherence to the following output requirements is MANDATORY:
 - DO NOT include any spaces or line breaks BEFORE, AFTER, OR INSIDE the separator token "|||---|||" (the separator must appear exactly as shown, with no spaces within or around it).
-	- Incorrect output example 1: "Boxspringbett MY DREAM, Eiche, 180 x 200 cm Grau/Weiß |||---|||..." (invalid because itcontains forbidden space before the separator)
+  - Incorrect output example 1: "Boxspringbett MY DREAM, Eiche, 180 x 200 cm Grau/Weiß |||---|||..." (invalid because it contains forbidden space before the separator)
 	- Incorrect output example 2: "Boxspringbett MY DREAM, Eiche, 180 x 200 cm Grau/Weiß|||---|||
 ...." (incorrect because it contains forbidden line break after the separator token)
-  - Incorrect output example 3: "Boxspringbett MY DREAM, Eiche, 180 x 200 cm Grau/Weiß||| ---|||..." (Invalid because of the spaces forbidden spaces inside the separator token—specifically, before the triple dashes)
+  - Incorrect output example 3: "Boxspringbett MY DREAM, Eiche, 180 x 200 cm Grau/Weiß||| ---|||..." (Invalid because of the forbidden spaces inside the separator token—specifically, before the triple dashes)
 - do NOT include any leading or trailing white spaces in the output.
 - do NOT output any additional content, prose, or anything else outside of this format.
 - Omit quotation marks and any square braces in your actual output.
@@ -269,11 +268,11 @@ So Adherence to the following output requirements is MANDATORY:
 
 REMEMBER you MUST ensure the following for a Valid H1 Title (A) and Subtitle (B) Creation:
 
-1. The output strictly follows the required schema: `[H1 Title]|||---|||[Subtitle]` with no spaces or line breaks before, after, or inside the separators, omtting an< square braces or quotation marks.> 
+1. The output strictly follows the required schema: `[H1 Title]|||---|||[Subtitle]` with no spaces or line breaks before, after, or inside the separators, omitting any square braces or quotation marks.
 2. The subtitle contains no verbs, filler words, generic or advertising phrases (e.g., “ideal für moderne Wohnräume”, “passt perfekt zu jeder Einrichtung”, etc.).
 3. The subtitle is composed only of concise, comma-separated noun phrases or adjectives directly describing the product, with no full sentences or claims.
 3. If product data is minimal, output a concise subtitle or a single dash (“-”) if nothing valid remains.
 4. Review the provided examples as a reference for correct creation logic, formatting and structure.
 
-If any of these requirements are not met, your output will be inoccrrect  - **NO EXCEPTIONS**.
+If any of these requirements are not met, your output will be incorrect  - **NO EXCEPTIONS**.
  

@@ -7,20 +7,12 @@ status: draft
 ```
 ## FORMATTING AND STRUCTURE RULES (Porta TITLE Formatter)
 <!--
-Note: This commented section serves as internal guiding for prompting/parsing/rule comprehension:  
+Note: This commented section serves as internal guiding for prompting/parsing and rule comprehension.   
 - single-quoted ('like this') strings separated by commas are used for correct or incorrect example elements  
 - parentheses contain descriptive comments or further details for implementation  
-- After the dash in first listing level, double space indicate indentation as per formatting convention  
-- each bullet point end requires two trailing spaces for a proper line break  
 -->
 
 ### MEASUREMENTS
-The following serves as an LLM internal reference or guiding for prompting/parsing/rule comprehension of preceding content:  
-- single-quoted ('like this') strings separated by commas are used for correct or incorrect example elements  
-- parentheses contain descriptive comments or further details for implementation  
-- After the dash in first listing level, double space indicate indentation as per formatting convention  
-- each bullet point end requires two trailing spaces for a proper line break  
--->
 
 **Rule M1 (Spacing):** Always use a space between number and unit.  
 - ✅ Correct: '250 cm', '75 kg', '1 200 mm', '2 l'  
@@ -41,9 +33,9 @@ The following serves as an LLM internal reference or guiding for prompting/parsi
 - ✅ Correct: 'grau/braun', 'basaltgrau/eiche'  
 - ❌ Incorrect: 'grau/ braun', 'grau / braun', 'grau /braun'    
 
-**Rule C2 (Color Case):** Colors in lowercase.  
-- ✅ Correct: 'grau/braun'  
-- ❌ Incorrect: 'Grau/Braun'  
+**Rule C2 (Color Case):** Colors are always written capitalized (first letter uppercase, rest lowercase).  
+- ✅ Correct: 'Grau/Braun', 'Basaltgrau/Eiche'  
+- ❌ Incorrect: 'grau/braun', 'BASALTGRAU/EICHE', 'basaltgrau/eiche'  
 
 
 ### BRANDS & CAPITALIZATION
@@ -78,24 +70,23 @@ The following serves as an LLM internal reference or guiding for prompting/parsi
 - ✅ Correct: '… 250 x 216 cm grau/ braun'  
 - ❌ Incorrect: '… grau/ braun.'  
 
-**Rule P2 (Allowed Punctuation):** Use only the punctuation symbols listed below. Any other symbols are disallowed unless they are officially part of a brand or series name.
+**Rule P2 (Single Spacing):** Use only single spaces as Multiple consecutive spaces are not allowed.  
+- ✅ Correct: 'Schrank mit Türen'  
+- ❌ Incorrect: 'Schrank  mit   Türen'  
 
-- ✅ Allowed Punctuation:  
-  - '.' (for abbreviations like 'ca.'),  
-  - 'x' (dimension separator per Rule M3),  
-**Rule P2 (Punctuation Guidelines):** Follow the general formatting rules defined above and restrict punctuation to the allowed symbols listed below. Disallowed symbols must never appear in a product title unless an exception noted in parentheses applies.
+**Rule P3 (Allowed & Disallowed Punctuation):** Use only the punctuation symbols listed below, unless a symbol is officially part of a brand or series name. Disallowed symbols must never appear in a product title unless an exception is noted in parentheses.
+- ✅ Allowed Punctuation:
+  - '.' (for abbreviations like 'ca.'),
+  - 'x' (dimension separator per Rule M3),
   - '–' (en-dash for series or set info; only if officially provided)
-
-- ❌ Disallowed Punctuation:  
-  - '!',  
-  - '?',  
-  - ';',  
-  - ':',  
-  - '"',  
+- ❌ Disallowed Punctuation:
+  - '!',
+  - '?',
+  - ';',
+  - ':',
+  - '"',
   - '´' (apostrophe; allowed only if officially part of the name)
 
 
-**Rule P3 (Single Spacing):** Use only single spaces as Multiple consecutive spaces are not allowed.  
-- ✅ Correct: 'Schrank mit Türen'  
-- ❌ Incorrect: 'Schrank  mit   Türen'  
+
 ```

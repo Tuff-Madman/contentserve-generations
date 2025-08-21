@@ -9,21 +9,21 @@ status: draft
 
 ## INPUT-OUTPUT EXAMPLE PAIRS
 <!-- 
-Each following XML tag contains a input-output pair for a specific product title generation:
+XML tags containing input-output pairs for specific products
 - factsheet_input: Original product data from source
 - title_output: Generated H1 title (50-55 characters)  
 - rationale: Construction logic and explanation for attribute selection
-Note: The id's attribute explains the specific scenario and learning focus.
+Note: The id's attribute explains the specific scenario and transfer focus.
 -->
 
 <example_1_bett id="Shows how to handle missing or conflicting data by applying fallback logic">
-  <factsheet_input>[Product attributes data]</factsheet_input>
+  <product_data_input>[Product attributes data]</product_data_input>
   <title_output>[Generated title]</title_output>
   <rationale>[Explanation of title construction logic]</rationale>
 </example_1_bett>
 
 <example_2_sofa id="Demonstrates ideal title structure with all key attributes present">
-  <factsheet_input>[Product attributes data]</factsheet_input>
+  <product_data_input>[Product attributes data]</product_data_input>
   <title_output>[Generated title]</title_output>
   <rationale>[Explanation of title construction logic]</rationale>
 </example_2_sofa>
